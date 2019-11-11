@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Gem Td</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="dist/styles.css">
+</head>
+
+<body>
+	<div class="maze">
+		
+		<div class="maze-labels maze-labels--stats">
+			<span class="maze__label maze__label--heading">Guide</span>
+			<span class="maze__label">1. Use the arrow keys to move your "player".</span>
+			<span class="maze__label">2. Press "space" to place a maze block.</span>
+			<span class="maze__label">3. To delete a block, place the selector directly over an existing block and press "space".</span>
+			<span class="maze__label">4. Press "tab" to select the options below.</span>
+			<span class="maze-divider"></span>
+			<span class="maze__label">Block Count: <span class="maze__label maze__label--count">0</span></span>
+			<span class="maze__label">Selected block color: <span class="maze__label maze__label--color background--green">Green</span></span>
+			<button type="button" data-value="green" class="maze-button background--green">Green</button>
+			<button type="button" data-value="red" class="maze-button background--red">Red</button>
+			<button type="button" data-value="blue" class="maze-button background--blue">Blue</button>
+			<button type="button" data-value="purple" class="maze-button background--purple">Purple</button>
+			<button type="button" data-value="reset" class="maze-button maze-button--danger">Reset Maze</button>
+		</div>
+		<div class="maze-container maze-grid"></div>
+		<div class="maze-container maze-wall"></div>
+		<div class="maze-container maze-path">
+			<div class="maze-path__path maze-path__path--1"></div>
+			<div class="maze-path__path maze-path__path--2"></div>
+			<div class="maze-path__path maze-path__path--3"></div>
+			<div class="maze-path__path maze-path__path--4"></div>
+			<div class="maze-path__path maze-path__path--5"></div>
+			<div class="maze-path__path maze-path__path--6"></div>
+			<div class="maze-path__path maze-path__path--7"></div>
+			<div class="maze-path__path maze-path__path--8"></div>
+		</div>
+		<div class="maze-container maze-point">
+			<div class="maze-blocker maze-point__point maze-point__point--1">
+				<span class="maze-point__label">1</span>
+			</div>
+			<span class="maze-blocker maze-point__point-external maze-point__point-external--1"></span>
+			<div class="maze-blocker maze-point__point maze-point__point--2">
+				<span class="maze-point__label">2</span>
+			</div>
+			<span class="maze-blocker maze-point__point-external maze-point__point-external--2"></span>
+			<div class="maze-blocker maze-point__point maze-point__point--3">
+				<span class="maze-point__label">3</span>
+			</div>
+			<span class="maze-blocker maze-point__point-external maze-point__point-external--3"></span>
+			<div class="maze-blocker maze-point__point maze-point__point--4">
+				<span class="maze-point__label">4</span>
+			</div>
+			<span class="maze-blocker maze-point__point-external maze-point__point-external--4"></span>
+			<div class="maze-blocker maze-point__point maze-point__point--5">
+				<span class="maze-point__label">5</span>
+			</div>
+			<span class="maze-blocker maze-point__point-external maze-point__point-external--5"></span>
+			<div class="maze-blocker maze-point__point maze-point__point--6">
+				<span class="maze-point__label">6</span>
+			</div>
+			<span class="maze-blocker maze-point__point-external maze-point__point-external--6"></span>
+			<div class="maze-blocker maze-point__point maze-point__point--7">
+				<span class="maze-point__label">7</span>
+			</div>
+			<span class="maze-blocker maze-point__point-external maze-point__point-external--7"></span>
+		</div>
+		<div class="maze-container maze-player">
+			<div class="maze-selector"></div>
+		</div>
+	</div>
+	<script src="dist/all.js"></script>
+</body>
+
+</html>
