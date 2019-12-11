@@ -33,6 +33,7 @@
 			let initialTop = 10.5 * this.playerSize;
 			let initialLeft = 0;
 			let counter = 0;
+			const masterTest = 10;
 			while(limit) {
 				counter++;
 				const block = this.createElement('div', ['maze-point__point', 'maze-point__point--small', 'maze-blocker']);
