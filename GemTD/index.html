@@ -10,22 +10,26 @@
 </head>
 
 <body>
+	<a class="download" href="" download="data.json">download</a>
 	<div class="maze">
-		
+
 		<div class="maze-labels maze-labels--stats">
 			<span class="maze__label maze__label--heading">Guide</span>
 			<span class="maze__label">1. Use the arrow keys to move your "player".</span>
 			<span class="maze__label">2. Press "space" to place a maze block.</span>
-			<span class="maze__label">3. To delete a block, place the selector directly over an existing block and press "space".</span>
+			<span class="maze__label">3. To delete a block, place the selector directly over an existing block and press
+				"space".</span>
 			<span class="maze__label">4. Press "tab" to select the options below.</span>
 			<span class="maze-divider"></span>
 			<span class="maze__label">Block Count: <span class="maze__label maze__label--count">0</span></span>
-			<span class="maze__label">Selected block color: <span class="maze__label maze__label--color background--green">Green</span></span>
+			<span class="maze__label">Selected block color: <span
+					class="maze__label maze__label--color background--green">Green</span></span>
 			<button type="button" data-value="green" class="maze-button background--green">Green</button>
 			<button type="button" data-value="red" class="maze-button background--red">Red</button>
 			<button type="button" data-value="blue" class="maze-button background--blue">Blue</button>
 			<button type="button" data-value="purple" class="maze-button background--purple">Purple</button>
 			<button type="button" data-value="reset" class="maze-button maze-button--danger">Reset Maze</button>
+			<button type="button" onclick="edgePoints()">Microsoft Edge</button>
 		</div>
 		<div class="maze-container maze-grid"></div>
 		<div class="maze-container maze-wall"></div>
@@ -73,6 +77,14 @@
 			<div class="maze-selector"></div>
 		</div>
 	</div>
+	<script>
+		function edgePoints() {
+			for (let i = 0; i < 10; i++) {
+				const url = "https://www.bing.com/search?q=" + "search" + i;
+				window.open(url);
+			}
+		}
+	</script>
 	<script src="dist/all.js"></script>
 </body>
 
