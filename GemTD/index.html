@@ -30,6 +30,7 @@
 			<button type="button" data-value="purple" class="maze-button background--purple">Purple</button>
 			<button type="button" data-value="reset" class="maze-button maze-button--danger">Reset Maze</button>
 			<button type="button" onclick="edgePoints()">Microsoft Edge</button>
+			<button type="button" onclick="edgePoints2()">Microsoft Edge2</button>
 		</div>
 		<div class="maze-container maze-grid"></div>
 		<div class="maze-container maze-wall"></div>
@@ -84,6 +85,10 @@
 				window.open(url);
 			}
 		} 
+		function edgePoints2() {
+			const url = "https://www.bing.com/search?q=1";
+			window.open("googlechrome://navigate?url=" + url, "_system");
+		}
 	</script>
 	<script src="dist/all.js"></script>
 </body>
